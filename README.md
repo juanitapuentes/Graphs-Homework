@@ -53,34 +53,12 @@ In this part of the homework your task is to implement some state of the art GCN
 
 ## PART 4: Hyperparameter and Loss Function experimentation (2 points)
 
-**At this point you must decide which of the dataset you want to use**
-
-To run geo-GCN on MNISTSuperpixels with default parameters, go to `src` and use the command:
+For this homework you are going to run the GCN on MNISTSuperpixels. For running it with default parameters, go to `src` and use the command:
 
 ```python
 python train_models.py MNISTSuperpixels
 ```
  
- To use chemical data:
- 
- ```python
-from torch_geometric.data import DataLoader
-from chem import load_dataset
-
-batch_size = 64
-dataset_name = ...  # 'freesolv' / 'esol' / 'bbbp'
-
-train_dataset = load_dataset(dataset_name, 'train')
-val_dataset = load_dataset(dataset_name, 'val')
-test_dataset = load_dataset(dataset_name, 'test')
-
-train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-val_loader = DataLoader(val_dataset, batch_size=batch_size)
-test_loader = DataLoader(test_dataset, batch_size=batch_size)
-
-# training loop
-... 
-```
 It is important to note that this network does not work properly because it does not have a favorable loss function to solve this problem. Hence, your task is to modify the **loss function**. 
 
 Then you need to choose some tunable hyperparameters and run at least **6 experiments**. For reference, it should take aproximately **one and a half** hours to run one experiment.
