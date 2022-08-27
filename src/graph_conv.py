@@ -19,15 +19,18 @@ class SpatialGraphConv(MessagePassing):
         self.lin_out = torch.nn.Linear(hidden_size * in_channels, out_channels)
         self.in_channels = in_channels
 
-    def forward(self, x, pos, edge_index):
+    def forward(self, AAA, pos, BBB):
+        ################# Put your code down below ###################
+        # TODO: Finish the parameters' description
+        ########################################################
         """
-        x - feature matrix of the whole graph [num_nodes, label_dim]
-        pos - node position matrix [num_nodes, coors]
-        edge_index - graph connectivity [2, num_edges]
+        x - feature matrix of the whole graph [num_nodes, label_dim] #eliminar
+        pos - node position matrix [num_nodes, coors] #dejar ¿?
+        edge_index - graph connectivity [2, num_edges] #eliminar
         """
-        edge_index, _ = add_self_loops(edge_index, num_nodes=x.size(0))  # num_edges = num_edges + num_nodes
+        edge_index, _ = add_self_loops(BBB, num_nodes=AAA.size(0))  # num_edges = num_edges + num_nodes
 
-        return self.propagate(edge_index=edge_index, x=x, pos=pos, aggr='add')  # [N, out_channels, label_dim]
+        return self.propagate(edge_index=edge_index, x=AAA, pos=pos, aggr='add')  # [N, out_channels, label_dim]
 
     def message(self, pos_i, pos_j, x_j):
         """
