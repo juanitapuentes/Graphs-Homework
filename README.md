@@ -53,7 +53,7 @@ In this part of the homework your task is to implement some state of the art GCN
 
 **How is the GCN aggregating information from neighboring nodes?**
 
-**What do the "AAA" and "BBB" parameters stand for in the forward function in [graph_conv.py](https://github.com/juanitapuentes/Graphs-Homeworks/blob/main/src/graph_conv.py)? Hint: you should look out for information in the Pytorch Geometric documentation and/or experiment with the code to visualize such variables and infere their meaning.
+**What do the "AAA" and "BBB" parameters stand for in the "forward" function in ? Hint: you should look out for information in the Pytorch Geometric documentation and/or experiment with the code to visualize such variables and infere their meaning.
 
 **Explain in detail what process or algorithm is carried out in each of the lines that you added in the code. What would happen if these lines were not added? How would this affect the output of the network?**
 
