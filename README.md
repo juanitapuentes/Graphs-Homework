@@ -31,7 +31,7 @@ $ pip install torch-geometric
 For more details or issues during installation go to: https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 
 
-## PART 2: Dataset exploration (1 Point)
+## PART 2: Datasets exploration (1 Point)
 
 In this part you will explore the [datasets](data). In this [article](https://arxiv.org/pdf/1909.05310.pdf) you will find a description of the three datasets available (BBBP, ESOL and FreeSolv). To get the complete point you have to append a table in your report with descriptive features about each one of the datasets and answer the following questions:
 
@@ -39,7 +39,9 @@ In this part you will explore the [datasets](data). In this [article](https://ar
 
 **How are the graph features organized?**
 
-**Which is the evaluation metric of this dataset?**
+**Which is the evaluation metric of this datasets?**
+
+The previous task is for you to understand how features are structured in GCN. During this task we will work with the MNISTSuperpixel Dataset. Add to your report a short description of this dataset.
 
 ## PART 3: Implementation (1 point)
 
