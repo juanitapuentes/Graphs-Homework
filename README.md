@@ -43,7 +43,7 @@ In this part you will explore the [datasets](data). In this [article](https://ar
 
 ## PART 3: Implementation (1 point)
 
-In this part of the homework your task is to implement some state of the art GCN's. You will also dive inside the code and implement some missing lines only be modifying the [graph_conv.py](https://github.com/juanitapuentes/Graphs-Homeworks/blob/main/src/graph_conv.py). Please just modify the parts of the code that explicitly ask to do so, otherwise the whole method would stop working. You have to read the files inside this [folder](https://github.com/juanitapuentes/Graphs-Homeworks/tree/main/src). You do not have to understand everything but you need to have a general idea of what is happening inside the code. In your report you need to answer the following questions:
+In this part of the homework your task is to implement some state of the art GCN's. You will also dive inside the code and implement some missing lines only by modifying the [graph_conv.py](https://github.com/juanitapuentes/Graphs-Homeworks/blob/main/src/graph_conv.py). Please just modify the parts of the code that explicitly ask to do so, otherwise the whole method would stop working. You have to read the files inside this [folder](https://github.com/juanitapuentes/Graphs-Homeworks/tree/main/src). You do not have to understand everything but you need to have a general idea of what is happening inside the code. In your report you need to answer the following questions:
 
 **Is this method evaluating the whole training set in every iteration?**
 
