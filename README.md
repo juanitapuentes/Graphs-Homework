@@ -69,7 +69,7 @@ Then you need to choose some tunable hyperparameters and run at least **6 experi
 
 To have the complete points, you need to attach a table with all the experiments to your report. In addition, you should discuss how each of the hyperparameters that you modify affects the performance of the network. Finally, you must explain why the new loss function that you implemented improves (or not) the metrics.
 
-## PART 5: Convolutional Layers experimentation (1 points)
+## PART 5: Convolutional Layers experimentation (1 point)
 
 Finally, you should choose the best model found in **PART 4** and experiment with the number of convolutional layers. You must perform at least 2 experiments. In the report attach the table with the results and discuss them. In addition, propose future enhancements to this GCN.
 
