@@ -44,13 +44,15 @@ class SpatialGraphConv(MessagePassing):
         relative_pos = pos_j - pos_i  # [n_edges, hidden_size * in_channels]
         
         spatial_scaling = F.relu(self.lin_in(relative_pos))  # [n_edges, hidden_size * in_channels]
-
-        n_edges = spatial_scaling.size(0)
-        # [n_edges, in_channels, ...] * [n_edges, in_channels, 1]
+        
         
         ################# Put your code here ###################
-        # TODO: 
+        # TODO: Considering the previous steps, determine the current
+        # number of nodes and assign it to the 'n_edges' variable.
         ########################################################
+        
+        n_edges = spatial_scaling.size(0)
+        # [n_edges, in_channels, ...] * [n_edges, in_channels, 1] #esto se borraría
         
         result = spatial_scaling.reshape(n_edges, self.in_channels, -1) * x_j.unsqueeze(-1)
         return result.view(n_edges, -1)
