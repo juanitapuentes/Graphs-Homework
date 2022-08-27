@@ -53,7 +53,7 @@ In this part of the homework your task is to implement some state of the art GCN
 
 ## PART 4: Hyperparameter and Loss Function experimentation (2 points)
 
-**At this point you must decide which of the datasets you want to use**
+**At this point you must decide which of the dataset you want to use**
 
 To run geo-GCN on MNISTSuperpixels with default parameters, go to `src` and use the command:
 
