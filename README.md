@@ -1,5 +1,7 @@
 # GRAPHS HOMEWORK
 
+In this homework you will explore the basics of GCNs through an implementation to solve a classification task in the MNISTSuperpixels dataset. In addition, you will implement your own GCN for classification in a citation network dataset.
+
 
 ## PART 1: Pytorch Geometric Installation
 
