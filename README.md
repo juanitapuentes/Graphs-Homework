@@ -94,7 +94,7 @@ Finally, you should choose the best model found in **PART 4** and experiment wit
 
 ## BONUS: Build your own GCN (1 point)
 
-In the file [cora](cora_data) you will find a citation network dataset that contains 2708 scientific publications and a total of 5429 links. Each publication is classified in one out of seven topics and is is described by the absence/presence of certain words from a dictionary. In [this link](https://graphsandnetworks.com/the-cora-dataset/) you will find more information about the dataset.
+In [cora](cora_data) you will find a citation network dataset that contains 2708 scientific publications and a total of 5429 links. Each publication is classified in one out of seven topics and is is described by the absence/presence of certain words from a dictionary. In [this link](https://graphsandnetworks.com/the-cora-dataset/) you will find more information about the dataset.
 
 Based on what you learned in class and considering the model you already worked with implement your own node classification model with the cora dataset. Start by exploring the dataset, understand the elements that will make up the graphs in this problem and load the data in order to develop your model using GCNs. To get the total marks you will have to attach the model and the training archives to the [new_model](new_model) file and report your model's accuracy in the PDF to be uploaded.
 
