@@ -35,12 +35,23 @@ class SpatialGraphConv(MessagePassing):
         pos_j [num_edges, coors]
         x_j [num_edges, label_dim]
         """
+        
+        ################# Put your code here ###################
+        # TODO: Calculate the relative position using pos_j and pos_i
+        ########################################################
+        
 
         relative_pos = pos_j - pos_i  # [n_edges, hidden_size * in_channels]
+        
         spatial_scaling = F.relu(self.lin_in(relative_pos))  # [n_edges, hidden_size * in_channels]
 
         n_edges = spatial_scaling.size(0)
         # [n_edges, in_channels, ...] * [n_edges, in_channels, 1]
+        
+        ################# Put your code here ###################
+        # TODO: 
+        ########################################################
+        
         result = spatial_scaling.reshape(n_edges, self.in_channels, -1) * x_j.unsqueeze(-1)
         return result.view(n_edges, -1)
 
@@ -49,6 +60,11 @@ class SpatialGraphConv(MessagePassing):
         aggr_out [num_nodes, label_dim, out_channels]
         """
         aggr_out = self.lin_out(aggr_out)  # [num_nodes, label_dim, out_features]
+        
+        ################# Put your code here ###################
+        # TODO: Add an activation function over aggr_out using the package torch_geometric.nn
+        ########################################################
+        
         aggr_out = F.relu(aggr_out)
         aggr_out = F.dropout(aggr_out, p=self.dropout, training=self.training)
 
