@@ -59,7 +59,7 @@ For this homework you are going to run the GCN on MNISTSuperpixels. For running 
 python train_models.py MNISTSuperpixels
 ```
  
-It is important to note that this network does not work properly because it does not have a favorable loss function to solve this problem. Hence, your task is to modify the **loss function**. 
+It is important to note that this network does not work properly because it does not have a favorable loss function to solve this problem. Hence, your task is to modify the **loss function**. More loss functions that you could use are available on this [documentation](https://pytorch.org/docs/stable/nn.functional.html).
 
 Then you need to choose some tunable hyperparameters and run at least **6 experiments**. For reference, it should take aproximately **one and a half** hours to run one experiment.
 
