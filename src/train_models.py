@@ -68,7 +68,13 @@ def train(epoch):
             data = rotation_1(data)
             data = rotation_2(data)
         output = model(data)
-        loss = F.nll_loss(output, data.y)
+        
+        ################# Put your code here ###################
+        # TODO: Change the actual loss function to obtain better metrics
+        ########################################################
+        
+        #loss = F.nll_loss(output, data.y) (BUENA)
+        loss = F.multi_margin_loss(output, data.y)
         loss.backward()
         loss_all += data.num_graphs * loss.item()
         optimizer.step()
