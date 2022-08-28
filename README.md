@@ -35,7 +35,7 @@ For more details or issues during installation go to: https://pytorch-geometric.
 
 ## PART 2: Datasets exploration (1 Point)
 
-In this part you will explore the [datasets](data). In this [article](https://arxiv.org/pdf/1909.05310.pdf) you will find a description of the three datasets available (BBBP, ESOL and FreeSolv). To get the complete point you have to append a table in your report with descriptive features about each one of the datasets and answer the following questions:
+In this part you will explore the [datasets](data). In this [article](Article.pdf) you will find a description of the three datasets available (BBBP, ESOL and FreeSolv). To get the complete point you have to append a table in your report with descriptive features about each one of the datasets and answer the following questions:
 
 **What is the task for each one of the datasets?**
 
@@ -84,3 +84,4 @@ Based on what you learned in class and considering the model you already worked 
 
 # Report
 Please upload to your repository a PDF file named `lastname_graphsHW.pdf`.
+**Deadline: Sep 13, 2022, 00:00 **
