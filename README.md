@@ -85,4 +85,4 @@ Based on what you learned in class and considering the model you already worked 
 # Report
 Please upload to your repository a PDF file named `lastname_graphsHW.pdf`.
 
-**Deadline: Sep 13, 2022, 00:00 **
+Deadline: Sep 13, 2022, 00:00
