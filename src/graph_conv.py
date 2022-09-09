@@ -22,15 +22,16 @@ class SpatialGraphConv(MessagePassing):
     def forward(self, AAA, pos, BBB):
 
         """
-        x - feature matrix of the whole graph [num_nodes, label_dim] #eliminar
-        pos - node position matrix [num_nodes, coors] #dejar ¿?
-        edge_index - graph connectivity [2, num_edges] #eliminar
+        AAA - What do you expect to find in this matrix?
+        pos - node position matrix [num_nodes, coors] 
+        BBB - What do you expect to find in this matrix?
         """
-
-        ################# Put your code down below ###################
-        # TODO: Finish the parameters' description (HINT: num_edges = num_edges + num_nodes)
+        ###########################################################
+        # TODO: Finish the parameters' description above (HINT: num_edges = num_edges + num_nodes)
         ########################################################
 
+        BBB, _ = add_self_loops(BBB, num_nodes=AAA.size(0))
+        
         return self.propagate(edge_index=edge_index, x=AAA, pos=pos, aggr='add')  # [N, out_channels, label_dim]
 
     def message(self, pos_i, pos_j, x_j):
