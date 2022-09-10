@@ -27,10 +27,10 @@ class SpatialGraphConv(MessagePassing):
         BBB - What do you expect to find in this matrix?
         """
         ###########################################################
-        # TODO: Finish the parameters' description above (HINT: num_edges = num_edges + num_nodes)
+        # TODO: Finish the parameters' description above 
         ########################################################
 
-        BBB, _ = add_self_loops(BBB, num_nodes=AAA.size(0))
+        BBB, _ = add_self_loops(BBB, num_nodes=AAA.size(0))   #num_edges = num_edges + num_nodes
         
         return self.propagate(edge_index=edge_index, x=AAA, pos=pos, aggr='add')  # [N, out_channels, label_dim]
 
